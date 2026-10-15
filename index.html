@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101010">
+  <title>REP RANK | Entrena. Progresa. Domina.</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #101010;
+      color: #f5f5f5;
+      font-family: Arial, sans-serif;
+    }
+    header {
+      padding: 22px 7%;
+      border-bottom: 1px solid #303030;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo { font-size: 24px; font-weight: 900; }
+    .logo span { color: #b6ff4a; }
+    main { padding: 60px 7%; max-width: 1000px; margin: auto; }
+    .tag {
+      color: #b6ff4a;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 12px;
+    }
+    h1 { font-size: clamp(38px, 7vw, 68px); margin: 18px 0; }
+    h1 span { color: #b6ff4a; }
+    p { color: #b5b5b5; line-height: 1.7; }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin-top: 40px;
+    }
+    .card {
+      background: #1b1b1b;
+      border: 1px solid #333;
+      border-radius: 14px;
+      padding: 22px;
+    }
+    .rank { color: #b6ff4a; font-weight: bold; }
+    button {
+      background: #b6ff4a;
+      color: #101010;
+      border: 0;
+      padding: 13px 18px;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    footer { padding: 24px 7%; color: #777; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">REP <span>RANK</span></div>
+    <span>Tu progreso cuenta.</span>
+  </header>
+
+  <main>
+    <div class="tag">Tu nueva era fitness</div>
+    <h1>ENTRENA.<br><span>PROGRESA.</span><br>DOMINA.</h1>
+    <p>
+      Descubre rutinas, supera tus límites y construye tu progreso.
+      Encuentra tu nivel y comienza a subir de rango.
+    </p>
+    <button onclick="document.getElementById('rangos').scrollIntoView({behavior:'smooth'})">
+      Explorar rangos ↓
+    </button>
+
+    <section id="rangos" class="cards">
+      <article class="card">
+        <div class="rank">RANGO 01</div>
+        <h2>Bronce</h2>
+        <p>Empieza con fundamentos y construye constancia.</p>
+      </article>
+      <article class="card">
+        <div class="rank">RANGO 02</div>
+        <h2>Plata</h2>
+        <p>Desarrolla tu técnica y fortalece tus hábitos.</p>
+      </article>
+      <article class="card">
+        <div class="rank">RANGO 03</div>
+        <h2>Oro</h2>
+        <p>Avanza con entrenamiento estructurado.</p>
+      </article>
+      <article class="card">
+        <div class="rank">RANGO 04</div>
+        <h2>Élite</h2>
+        <p>Asume nuevos retos según tu experiencia.</p>
+      </article>
+      <article class="card">
+        <div class="rank">RANGO 05</div>
+        <h2>Leyenda</h2>
+        <p>Tu siguiente reto comienza aquí.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>REP RANK · Prototipo inicial</footer>
+</body>
+</html>
